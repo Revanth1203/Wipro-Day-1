@@ -1,5 +1,5 @@
 chat gpt answer :
--------------------
+------------------
 using System;
 
 // Step 1: Define delegate type
