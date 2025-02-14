@@ -1,5 +1,4 @@
-http://localhost  
-
+Print And Scan Demo---
 
 using System;
 using System.Collections.Generic;
@@ -208,16 +207,3 @@ namespace classobjectdemo
         }
     }
 }
-
-
-
-Anyone can create the group and share the link in here!
-8558935798(Dhiraj sah)
-7026886253(Shravanti C K)
-8260683763(Ankita Nayak)
-
-6305514775- Badri Venkata Sai Kiran
-9573585254-Greeshma Malasani
-9392783770-Srinithya N
-6200321007(shruti singh)
-7995532527(Bhanu Sankar)
