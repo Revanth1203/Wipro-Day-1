@@ -1,6 +1,6 @@
 
 Dialog Boxes :
------------------
+---------------
 A dialog box is a window which prompt the user for an input to achieve a
 specific task,for example the open dialog box prompts the user to select
 a file and click the open button to perform the task of opening a file
