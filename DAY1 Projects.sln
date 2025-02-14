@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "printandscandemo", "printandscandemo\printandscandemo.csproj", "{95303D60-14E5-453D-AD75-63FDCC1861C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "classandobjectdemo", "classandobjectdemo\classandobjectdemo.csproj", "{221111E1-EC43-4CBD-B5C1-54188296D2FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cubedemo", "cubedemo\cubedemo.csproj", "{CEBDEA1E-3472-4886-9EED-A4E94737D479}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95303D60-14E5-453D-AD75-63FDCC1861C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95303D60-14E5-453D-AD75-63FDCC1861C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95303D60-14E5-453D-AD75-63FDCC1861C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95303D60-14E5-453D-AD75-63FDCC1861C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{221111E1-EC43-4CBD-B5C1-54188296D2FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{221111E1-EC43-4CBD-B5C1-54188296D2FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{221111E1-EC43-4CBD-B5C1-54188296D2FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{221111E1-EC43-4CBD-B5C1-54188296D2FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEBDEA1E-3472-4886-9EED-A4E94737D479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEBDEA1E-3472-4886-9EED-A4E94737D479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEBDEA1E-3472-4886-9EED-A4E94737D479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEBDEA1E-3472-4886-9EED-A4E94737D479}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
