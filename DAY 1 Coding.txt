@@ -1,0 +1,223 @@
+http://localhost  
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web;
+
+namespace Printandscandemo
+{
+     class Program
+    {
+        static void Main(string[] args)
+        {
+            int x, y, z;
+           
+            Console.WriteLine("enter values in x and y ...");
+            x =Convert.ToInt32(Console.ReadLine());
+            y=int.Parse(Console.ReadLine());
+            
+            z = x + y;
+            Console.WriteLine("The sum of {0} and {1} is {2}", x, y, z);
+            Console.WriteLine("The sum of {0,6} and {1,7} is {2,5}", x, y, z);
+            Console.WriteLine("The sum of " + x + " and " + y + " is " + z);
+
+            // latest trend or latest syntac which we are following is 
+
+            Console.WriteLine($"The sum of {x}   and {y} is {z}");
+            Console.WriteLine("\n printing constants ..");
+            Console.WriteLine($"{23.45}");
+            Console.WriteLine($"Febuary has either {28} or {29}");
+            Console.WriteLine("\n enter values in a single line comma seperated ");
+            string input= Console.ReadLine();
+            int m, n;
+            m = Convert.ToInt32(input.Split(',')[0]);
+            n = Convert.ToInt32(input.Split(',')[1]);
+            Console.WriteLine($"The sum of {m} and {n} is {m+n}");
+
+            Console.WriteLine("\n enter values in a single line but choose your delimiter ");
+            string input2 = Console.ReadLine();
+            char[] chars = new char[] { ',', '.', '-', '_', '$',' ' };
+            int m1, n1;
+            m1 = Convert.ToInt32(input2.Split(chars)[0]);
+            n1 = Convert.ToInt32(input2.Split(chars)[1]);
+            Console.WriteLine($"The sum of {m1} and {n1} is {m1 + n1}");
+            //explore other types also 
+            double kk = 123.456;
+            decimal ss = 234.567M;//convention u have to follow
+            float ff = 234.45F;
+            string name = "sudha";
+
+            Console.WriteLine($"{kk}--{ss}--{ff}--{name}");
+
+            // i want to find the range of data types 
+            Console.WriteLine($"Integer max value is {int.MaxValue} \n Integer Least value is {int.MinValue}");
+            Console.WriteLine($"Byte max value is {byte.MaxValue} \n Byte Least value is {byte.MinValue}");
+            Console.ReadLine();
+
+
+        }
+    }
+}
+
+
+
+
+class object demo
+------------------
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace classobjectdemo
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        class Employee
+        {
+            int salary;
+            int bonus;
+
+            public void totalsalary (int sal1,int bonus1)
+            {
+                this.salary=sal1;
+                this.bonus=bonus1;
+                MessageBox.Show("The total salary is " + (salary + bonus));
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Employee emp = new Employee();
+            emp.totalsalary(Convert.ToInt32(textBox1.Text), Convert.ToInt32(textBox2.Text));    
+
+
+        }
+    }
+}
+
+
+
+Reusable Features from C#.net :(Assemblies  ) 
+_________________________________________________________________________________________
+whatver program we are writing we are writing  in some namesapce when we build them then assembly is created for the program 
+if in my progam entry point function main method or button click is there then when we compile it or build it  exe will be created executble file but when i build a class or when my program is not having main method then its dll will be created which is called as dynamic link library .
+
+when u wan to create dll file means assembly without an main method then u have to use class library template for it 
+
+There are two types of assemblies one is shared assembly given by .net and they are stored in GAC (Global assemby cache)
+
+and another is provate asssembly the assembly which we are creating 
+
+namespaces are logical when we build them they become physical parts which are assemblies 
+
+
+
+uisng class library template 
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CubeDemo
+{
+    public class CubeExample
+    {
+        public int FindCube(int x)
+        {
+            return x * x * x;
+        }
+
+    }
+}.
+
+
+now u can  see that it is not having main method now right click on this project and say build and then go to the project 
+again by right clckking and say open folder in file explorere and go to bin and debug see there u will dll file here 
+
+now i want to use this dll code functionality in windows application which i had created just now 
+
+so add referecne of dll into it and then add namespace and then use it 
+
+go to windows application 
+
+add one button and add refercne to dll right clcking it 
+updated windows application using dll
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using CubeDemo;
+
+namespace classobjectdemo
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        class Employee
+        {
+            int salary;
+            int bonus;
+
+            public void totalsalary (int salary1,int bonus1)
+            {
+                salary=salary1;
+                bonus=bonus1;
+                MessageBox.Show("The total salary is " + (salary + bonus));
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Employee emp = new Employee();
+            emp.totalsalary(Convert.ToInt32(textBox1.Text), Convert.ToInt32(textBox2.Text));    
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CubeExample obj = new CubeExample();
+          MessageBox.Show("The cube  is "+obj.FindCube(4));
+        }
+    }
+}
+
+
+
+Anyone can create the group and share the link in here!
+8558935798(Dhiraj sah)
+7026886253(Shravanti C K)
+8260683763(Ankita Nayak)
+
+6305514775- Badri Venkata Sai Kiran
+9573585254-Greeshma Malasani
+9392783770-Srinithya N
+6200321007(shruti singh)
+7995532527(Bhanu Sankar)
